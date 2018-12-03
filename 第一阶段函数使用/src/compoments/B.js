@@ -5,11 +5,7 @@ class B extends Component {
 	render() {
 		return (
 			<div>
-				宁的名字是：{this.props.name}
-				<br />
-				年龄： {this.props.age}
-				<br />
-				性别： {this.props.sex}
+				宁的名字是：阿猫阿狗🐩
 				<br />
 				<img src={require('../images/B.png')} style={{ width: 200, height: 200 }} alt="" />
 			</div>
