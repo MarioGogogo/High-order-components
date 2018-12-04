@@ -2,6 +2,7 @@ import React from 'react';
 
 const modifyPropsHOC = WrappedComponent =>
 	class newComponent extends WrappedComponent {
+		// 高阶组件的显示名称
 		static displayName = `NewComponent(${getDidsplayName(WrappedComponent)})`;
 		// 这有一个问题会修改所有被HOC组件包裹的组件的生命周期函数
 		componentWillMount = () => {
