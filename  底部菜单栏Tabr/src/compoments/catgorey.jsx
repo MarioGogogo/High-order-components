@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import Tabber from '../compoments/tabber/index.jsx';
-class Home extends Component {
+export default class Catgorey extends Component {
 	render() {
 		return (
 			<div>
-				<div>Home</div>
+				Catgorey
+				<Tabber />
 			</div>
 		);
 	}
 }
-
-export default Tabber(Home);

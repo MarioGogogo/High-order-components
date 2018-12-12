@@ -24,29 +24,36 @@ const icons = [
 		link: '/setting',
 	},
 ];
-class Tabber extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			index: 0,
-		};
-	}
-	render() {
-		const url = window.location.href;
-		console.log(url);
-		return (
-			<div className="tabber">
-				<div className="tabber-content">
-					{icons.map((v, i) => (
-						<Link to={v.link} key={i} className={'tabber-item ' + (url.indexOf(v.link) > -1 ? 'active' : '')}>
-							<div className={'iconfont ' + v.img} />
-							<div className>{v.title}</div>
-						</Link>
-					))}
+
+const Tabber = WrappedComponent =>
+	class Tabber extends Component {
+		constructor(props) {
+			super(props);
+			this.state = {
+				index: 0,
+			};
+		}
+		render() {
+			const url = window.location.href;
+			console.log(url);
+			return (
+				<div className="tabber-body">
+					<div className="tabber-childer">
+						<WrappedComponent />
+					</div>
+					<div className="tabber">
+						<div className="tabber-content">
+							{icons.map((v, i) => (
+								<Link to={v.link} key={i} className={'tabber-item ' + (url.indexOf(v.link) > -1 ? 'active' : '')}>
+									<div className={'iconfont ' + v.img} />
+									<div className>{v.title}</div>
+								</Link>
+							))}
+						</div>
+					</div>
 				</div>
-			</div>
-		);
-	}
-}
+			);
+		}
+	};
 
 export default Tabber;
