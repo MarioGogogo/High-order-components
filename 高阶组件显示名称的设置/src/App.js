@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import Tabber from './compoments/tabber/index.jsx';
+
+import E from './compoments/E';
+import F from './compoments/F';
+
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Tabber />
+				<E />
+				<F />
 			</div>
 		);
 	}
