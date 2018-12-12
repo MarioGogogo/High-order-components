@@ -1,10 +1,6 @@
-* {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
 .tabber {
 	height: 50px;
+
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
@@ -19,4 +15,7 @@
 }
 .iconfont {
 	font-size: 28px !important;
+}
+.active {
+	color: red !important;
 }

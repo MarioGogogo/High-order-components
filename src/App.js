@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Tabber from './compoments/tabber/index.jsx';
+import './app.css';
+import RouterMap from './router.jsx';
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Tabber />
+				<RouterMap />
 			</div>
 		);
 	}

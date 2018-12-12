@@ -1,11 +1,13 @@
-.container {
-	width: 200px;
-	height: 400px;
-	border: 2px solid red;
-	float: left;
-	margin-right: 60px;
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
-.header {
-	height: 20px;
-	background: red;
+
+a:hover,
+a:active,
+a:visited,
+a:link {
+	text-decoration: none;
+	color: #ccc;
 }
